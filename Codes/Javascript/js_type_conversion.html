@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Type Casting</title>
+   </head>
+   <body>
+   <center>
+		<p><b><u>Please Enter two Numbers</u></b></p>
+		<form>
+		First Number 
+			<input type="text" name="num1" id="num1">
+			<br><br>
+		Last Number
+			<input type="text" name="num2" id="num2">
+			<br><br>
+			<input type="button" value="Add" name="submit" id="submitbutton" onclick="getsum();">
+		</form>   
+		<br>
+		<p><b><u>Sum is </u></b></p>
+		<br>
+		<p id="sum"></p>
+		<script type="text/javascript">
+		function getsum(){
+			document.getElementById("sum").innerHTML = Number(document.getElementById("num1").value) + Number(document.getElementById("num2").value) ;	
+		}
+		</script>
+	</center>
+   </body>
+</html>

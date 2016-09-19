@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		JSON
+	</title>
+</head>
+<body>
+
+<h2> Student Details</h2>
+
+<p id="demo"></p>
+
+
+<script>
+var text = '{"Student":[' +
+'{"firstName":"Varsha","lastName":"Pathak","SJSUID":"016739898" },' +
+'{"firstName":"Kriti","lastName":"Krishnan","SJSUID":"010731461" },' +
+'{"firstName":"Anuja","lastName":"Vadiya","SJSUID":"010731423" },' + '{"firstName":"Gaurav","lastName":"Belu","SJSUID":"010831461" },' +
+'{"firstName":"Megha","lastName":"Sobhani","SJSUID":"010741678" }]}';
+obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML =
+"Name : " + obj.Student[0].firstName + " " + obj.Student[0].lastName + "   SJSU ID : " + obj.Student[0].SJSUID + "<br>" +  "Name : "+ obj.Student[1].firstName + " " + obj.Student[1].lastName + "   SJSU ID : " + obj.Student[1].SJSUID +  "<br>" +   "Name : " + obj.Student[2].firstName + " " + obj.Student[2].lastName + "   SJSU ID : " + obj.Student[2].SJSUID +  "<br>" + "Name : " + obj.Student[3].firstName + " " + obj.Student[3].lastName + "   SJSU ID : " + obj.Student[3].SJSUID + "<br>" + "Name : " + obj.Student[4].firstName + " " + obj.Student[4].lastName + "   SJSU ID : " + obj.Student[4].SJSUID;
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Family Name</title>
+   </head>
+   <body>
+   <p id = "name_1"></p>
+   <p id = "name_2"></p>
+   <p id = "name_3"></p>
+   <p id = "name_4"></p>
+
+   <script>
+	
+	var Lastname = { lastname: "Pathak" }
+
+	var Firstname_1 = { firstname_1: "Varsha" }
+	var Firstname_2 = { firstname_2: "Megha" }
+	var Firstname_3 = { firstname_3: "Kritika" }
+	var Firstname_4 = { firstname_4: "Shifali" }
+
+	Firstname_1.__proto__ = Lastname ;
+	Firstname_2.__proto__ = Lastname ;
+	Firstname_3.__proto__ = Lastname ;
+	Firstname_4.__proto__ = Lastname ;
+
+	document.getElementById("name_1").innerHTML = Firstname_1.firstname_1 + " " + Firstname_1.lastname;
+	document.getElementById("name_2").innerHTML = Firstname_2.firstname_2 + " " + Firstname_1.lastname;
+	document.getElementById("name_3").innerHTML = Firstname_3.firstname_3 + " " + Firstname_1.lastname;
+	document.getElementById("name_4").innerHTML = Firstname_4.firstname_4 + " " + Firstname_1.lastname;
+
+
+	</script>
+
+    </body>
+</html>

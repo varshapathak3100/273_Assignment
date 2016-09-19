@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Finding Location</title>
+   </head>
+   <body style="background-color:#ffe6ff">
+   <center>
+   	<h1>Spot Yourself !</h1>
+   	<br><br><br>
+   	<form>
+	<input type="button" name="find" value="Find Position" onclick="findposition();"></p>
+	</form>
+	<br><br>
+	<p><b>Longitude</b></p>
+	<p id="longitudex"></p>
+	<p><b>Latitude</b></p>
+	<p id="latitudey"></p>
+	</center>
+	<script type="text/javascript">
+	function findposition(){
+		if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(showPosition);
+		}	
+		else{
+		document.getElementById("longitudex").innerHTML = "Not possible";	
+		}
+	}
+	function showPosition(position){
+		document.getElementById("longitudex").innerHTML = position.coords.longitude;
+		document.getElementById("latitudey").innerHTML = position.coords.latitude;
+		}
+	</script>
+   </body>
+</html>

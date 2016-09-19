@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Personal Information</title>
+   </head>
+   <body>
+   <center>
+		<p><b><u>Please Enter your details</u></b></p>
+		<form>
+		First Name 
+			<input type="text" name="firstname" id="firstname">
+			<br><br>
+		Last Name
+			<input type="text" name="lastname" id="lastname">
+			<br><br>
+		Date of birth
+			<input type="date" name="birthdate" id="birthdate">
+			<br><br>
+		Email id
+			<input type="email" name="emailid" id="emailid">
+			<br><br>
+		Linkedin Profile link
+			<input type="url" name="linkedin" id="linkedin">
+			<br><br>
+		Contact Number
+			<input type="tel" name="contactnumber" id="contactnumber">
+			<br><br>
+			<input type="button" value="Submit" name="submit" id="submitbutton" onclick="getinfo();">
+		</form>   
+		<br>
+		<p><b><u>Personal Details Entered</u></b></p>
+		<br>
+		<p id="display_firstname"></p>
+		<p id="display_lastname"></p>
+		<p id="display_birthdate"></p>
+		<p id="display_emailid"></p>
+		<p id="display_linkedin"></p>
+		<p id="display_contactnumber"></p>
+
+		<script type="text/javascript">
+		function getinfo(){
+			document.getElementById("display_firstname").innerHTML = document.getElementById("firstname").value;	
+			document.getElementById("display_lastname").innerHTML = document.getElementById("lastname").value;	
+			document.getElementById("display_birthdate").innerHTML = document.getElementById("birthdate").value;	
+			document.getElementById("display_emailid").innerHTML = document.getElementById("emailid").value;	
+			document.getElementById("display_linkedin").innerHTML = document.getElementById("linkedin").value;	
+			document.getElementById("display_contactnumber").innerHTML = document.getElementById("contactnumber").value;
+				}
+		</script>
+	</center>
+   </body>
+</html>

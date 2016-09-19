@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Address</title>
+   </head>
+   <body>
+      <form>
+        Enter your House Address
+        <input type = "text" name="address_1" id="home_address">
+        <input type="button" value="SUBMIT" onclick="getaddress();">
+      </form>
+      <div id="display_address"></div>
+      <script language="javascript" type="text/javascript">
+      function getaddress() {
+      var addrr=document.getElementById("home_address").value;
+      localStorage.setItem("addr", addrr);
+document.getElementById("display_address").innerHTML = localStorage.getItem("addr");
+} 
+  </script>
+  	</body>
+</html>

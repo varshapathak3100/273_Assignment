@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Search and Replace	
+</title>
+</head>
+<body>
+
+<p>San Jose State University</p>
+
+<p id="replacee">San Jose State university is the 6th best public university present on the West Coast.</p>
+<form>
+<br><br>
+		Word to replace
+			<input type="text" name="searchTerm" id="searchTerm">
+			<br><br>
+		Enter replace word
+			<input type="text" name="replaceTerm" id="replaceTerm">
+			<br><br>
+</form>
+<button onclick="replaceFucntion()">Replace</button>
+
+<script>
+function replaceFucntion() {
+    var str = document.getElementById("replacee").innerHTML;
+    var sT= document.getElementById("searchTerm").value;
+    var rT= document.getElementById("replaceTerm").value;
+    var txt = str.replace(sT,rT);
+    document.getElementById("replacee").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

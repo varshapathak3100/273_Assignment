@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Family Name</title>
+   </head>
+  <body>
+   <center>
+		<p><b><u>Answer in True and False</u></b></p>
+		<form>
+		TCP is connection-oriented.  
+			<input type="text" name="1" id="1">
+			<br><br>
+		OSI model has 6 layers.
+			<input type="text" name="2" id="2">
+			<br><br>
+		Transport layer provides end to end connection.
+			<input type="text" name="3" id="3">
+			<br><br>
+		Physical Layer transfers data in the form of bits.
+			<input type="text" name="4" id="4">
+			<br><br>
+		DNS uses DORA.
+			<input type="text" name="5" id="5">
+			<br><br>
+			<input type="button" value="Submit" name="submit" id="submitbutton" onclick="getscore();">
+		</form>   
+		<br>
+		<p><b><u>Personal Details Entered</u></b></p>
+		<br> Your final score is <u>
+		<p id="score"></p></u>
+		<script type="text/javascript">
+		function getscore(){
+		var i = 0;
+		if(document.getElementById("1").value=="True")
+			i=i+1;
+		else
+			i=i;
+		if(document.getElementById("2").value=="False")
+			i=i+1;
+		else
+			i=i;
+		if(document.getElementById("1").value=="True")
+			i=i+1;
+		else
+			i=i;
+		if(document.getElementById("1").value=="True")
+			i=i+1;
+		else
+			i=i;		
+		if(document.getElementById("1").value=="False")
+			i=i+1;
+		else
+			i=i;		
+		
+			document.getElementById("score").innerHTML =i;	
+			}
+		</script>
+	</center>
+   </body>
+</html>

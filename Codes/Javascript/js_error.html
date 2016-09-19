@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<title>Errors</title>
+   </head>
+   <body>
+   <center>
+		<p><b><u>Please enter numbers to divide</u></b></p>
+		<form>
+		First Number
+			<input type="text" name="num1" id="num1">
+			<br><br>
+		Second Number
+			<input type="text" name="num2" id="num2">
+			<br><br>
+			<input type="button" value="Check" name="submit" id="submitbutton" onclick="check();">
+		</form>   
+		<br>
+		<p id="Conclusion"></p>
+		<script type="text/javascript">
+		function check(){
+
+			try{
+				number_1=Number(document.getElementById("num1").value);
+				number_2=Number(document.getElementById("num2").value);
+				if (number_2 == 0) throw "Divisor can not be 0"
+				var number_3 = number_1/number_2;
+				document.getElementById("Conclusion").innerHTML=number_3;	
+				}
+			catch(err){
+					document.getElementById("Conclusion").innerHTML=" Exception occured " + err;
+				}
+			}
+		</script>
+	</center>
+   </body>
+</html>

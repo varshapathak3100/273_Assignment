@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script language="javascript" type="text/javascript">
+          var names = ["Varsha","Megha","Shemal","Kritika","Venky","Nidhi","Elizabeth"];
+          document.write("Names present in record    -   " + names + "<br>" + "Searching for 'Fred'" + "<br>");
+          for (var i = 0; i < names.length; i++) {
+            if(names[i]=="Fred"){
+              var j = 1;
+              break;
+            }
+            else{
+              j=0;
+            }
+      }
+      </script>
+    </head>
+    <body>
+      <script language="javascript" type="text/javascript">
+      if (j==1) {
+      document.write("Name Exists");
+      }
+      else{
+      document.write("Name does not exist");
+      }
+      </script>
+    </body>
+</html>
